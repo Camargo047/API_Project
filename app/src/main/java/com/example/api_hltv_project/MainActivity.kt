@@ -11,6 +11,7 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import com.example.api_hltv_project.ui.theme.API_HLTV_PROJECTTheme
+import com.example.api_hltv_project.ui.views.PlayerListScreen
 
 class MainActivity : ComponentActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -18,12 +19,15 @@ class MainActivity : ComponentActivity() {
         setContent {
             API_HLTV_PROJECTTheme {
                 // A surface container using the 'background' color from the theme
-                Surface(modifier = Modifier.fillMaxSize(), color = MaterialTheme.colorScheme.background) {
-                   PlayerListScreen()
-                }
+                Surface(
+                    modifier = Modifier.fillMaxSize(),
+                    color = MaterialTheme.colorScheme.background
+                ){
+                    PlayerListScreen()
             }
         }
     }
+}
 }
 
 

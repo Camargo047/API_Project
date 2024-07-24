@@ -1,7 +1,5 @@
 package com.example.api_hltv_project.network
 
-
-
 import com.example.api_hltv_project.data.Player
 import com.squareup.moshi.Moshi
 import com.squareup.moshi.kotlin.reflect.KotlinJsonAdapterFactory
