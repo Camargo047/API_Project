@@ -2,8 +2,9 @@ package com.example.api_hltv_project.data
 
 data class Player (
 
-val image: String,
-val nickname: String,
-val age: Int
+    val id: Int,
+    val logo: String,
+    val name: String,
+
 
 )

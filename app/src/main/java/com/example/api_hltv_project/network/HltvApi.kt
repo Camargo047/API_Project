@@ -7,7 +7,7 @@ import retrofit2.Retrofit
 import retrofit2.converter.moshi.MoshiConverterFactory
 import retrofit2.http.GET
 
-const val BASE_URL =  "https://hltv-api.vercel.app"
+const val BASE_URL =  "https://hltv-api.vercel.app/"
 
 private val moshi = Moshi.Builder()
     .add(KotlinJsonAdapterFactory())
@@ -19,7 +19,7 @@ private val retrofit = Retrofit.Builder()
     .build()
 
 interface HltvApiService {
-    @GET("api/players.json")
+    @GET("api/player.json")
     suspend fun getPlayers(): List<Player>
 }
 

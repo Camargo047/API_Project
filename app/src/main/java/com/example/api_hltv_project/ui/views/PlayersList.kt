@@ -94,11 +94,11 @@ fun PlayerEntry(
         Box(){
             AsyncImage(
                 model = ImageRequest.Builder(LocalContext.current)
-                    .data(BASE_URL+player.image)
+                    .data(BASE_URL+player.logo)
                     .crossfade(true)
                     .build(),
                 placeholder = painterResource(R.drawable.csplaceholder),
-                contentDescription = player.image,
+                contentDescription = player.logo,
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
                     .fillMaxWidth()
@@ -119,7 +119,7 @@ fun PlayerEntry(
                 )
             )
             Text(
-                text = player.nickname,
+                text = player.name,
                 modifier = Modifier
                     .align(Alignment.BottomCenter),
                 style = MaterialTheme.typography.bodyLarge.copy(
